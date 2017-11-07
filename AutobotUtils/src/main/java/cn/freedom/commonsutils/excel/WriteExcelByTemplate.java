@@ -15,15 +15,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 
-/**
- * 
-* @ClassName: WriteExcelByTemplate.java 
-* @Package com.sensor.utils.excel 
-* @Description: TODO 类型描述
-* @author  Administrator shilei@cmiot.chinamobile.com  
-* @date 2017年10月9日 下午2:11:23 
-* @version V1.0
- */
+
 public class WriteExcelByTemplate {
 
 	/**

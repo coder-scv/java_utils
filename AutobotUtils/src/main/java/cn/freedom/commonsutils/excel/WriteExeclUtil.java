@@ -14,16 +14,8 @@ import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 
-/** @author Hongten
- * @created 2014-5-20 */
 public class WriteExeclUtil {
 
-	/** Read the Excel 2003-2007
-	 * 
-	 * @param path
-	 *            the path of the Excel
-	 * @return
-	 * @throws IOException */
 	public static void writeCSV(String path, String[] heads, List<List<String>> writeWorks) {
 		try {
 			File target = new File(path);
