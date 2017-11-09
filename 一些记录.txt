@@ -1,0 +1,5 @@
+windows openssl 的安装
+网上大多数找到的都是需要自己编译的教程
+找到一个编译好的版本
+http://slproweb.com/products/Win32OpenSSL.html
+引自博客：http://blog.csdn.net/houjixin/article/details/25806151
