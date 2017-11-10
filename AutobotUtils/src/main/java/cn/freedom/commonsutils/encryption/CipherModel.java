@@ -8,15 +8,7 @@ import javax.crypto.spec.SecretKeySpec;
 import cn.freedom.commonsutils.encryption.util.HexStrUtils;
 import cn.freedom.commonsutils.encryption.util.StringAppendUtil;
 
-/**
- * 
-* @ClassName: CipherModel.java 
-* @Package com.cmiot.iotutils.encryption 
-* @Description: Des 3Des 枚举  选取加密类型 调用 加解密方法 或调用 基础方法
-* @author  Administrator shilei@cmiot.chinamobile.com  
-* @date 2017年11月3日 下午2:53:21 
-* @version V1.0
- */
+
 public enum CipherModel {
 	DES_ECB("DES", "DES/ECB/NoPadding"), DESede_ECB("DESede", "DESede/ECB/NoPadding"), DESede_CBC("DESede", "DESede/CBC/NoPadding");
 

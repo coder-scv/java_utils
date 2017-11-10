@@ -1,9 +1,11 @@
 package cn.freedom.commonsutils;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -194,6 +196,55 @@ public class FileUtils {
 			bw.flush();
 			bw.close();
 		} catch (Exception e) {}
+	}
+
+	public static String read(String path, char commentsToken, String LineMarking) {
+		try {
+			File file = new File(path);
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			String line = "";
+			StringBuffer sb = new StringBuffer();
+			while ((line = br.readLine()) != null) {
+				if (line.charAt(0) == commentsToken) {
+					continue;
+				} else {
+					sb.append(line);
+					sb.append(LineMarking);
+				}
+			}
+			sb.setLength(sb.length() - LineMarking.length());
+			br.close();
+			String result = sb.toString();
+
+			return result;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
 
 	}
+
+	public static String readLine(String path, int lineIndex) {
+		try {
+			File file = new File(path);
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			String line = "";
+			String result = "";
+			int index = 0;
+			while ((line = br.readLine()) != null) {
+				if (index == lineIndex) {
+					result = line;
+					break;
+				}
+				index++;
+			}
+			br.close();
+			return result;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+
+	}
+
 }

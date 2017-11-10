@@ -67,7 +67,7 @@ public class ReadExcelUtil {
 					result.add(row);
 				}
 			}
-
+			is.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
