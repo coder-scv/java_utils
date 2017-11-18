@@ -114,4 +114,17 @@ public class StringUtils {
 		String[] headStrs = str.split(",");
 		return headStrs;
 	}
+	
+	public static String subString(String source,String startKey,String endKey){
+		if(source.contains(startKey)){
+			int startIndex = source.indexOf(startKey) + startKey.length();
+			source = source.substring(startIndex);
+			
+			if(source.contains(endKey)){
+				int endIndex = source.indexOf(endKey);
+				source = source.substring(0,endIndex);
+			}
+		}
+		return source;
+	}
 }
