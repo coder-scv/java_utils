@@ -83,6 +83,14 @@ public enum CipherModel {
 		return desJava(key, data, Cipher.ENCRYPT_MODE, true, "FFFF");
 
 	}
+	public String Dec(String key, String data , boolean isEnd) {
+		return desJava(key, data, Cipher.DECRYPT_MODE, isEnd, "FFFF");
+	}
+	
+	public String Enc(String key, String data, boolean isEnd) {
+		return desJava(key, data, Cipher.ENCRYPT_MODE, isEnd, "FFFF");
+		
+	}
 
 	public String Dec(String key, String data, String appendStr) {
 		return desJava(key, data, Cipher.DECRYPT_MODE, true, appendStr);
