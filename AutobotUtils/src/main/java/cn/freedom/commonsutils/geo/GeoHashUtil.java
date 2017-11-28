@@ -2,7 +2,6 @@ package cn.freedom.commonsutils.geo;
 
 import java.text.DecimalFormat;
 import java.util.BitSet;
-import java.util.HashMap;
 
 import cn.freedom.commonsutils.number.NumberStringUtils;
 import cn.freedom.commonsutils.number.NumberStringUtils.Format;
